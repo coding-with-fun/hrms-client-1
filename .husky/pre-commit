@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-echo "Pre commit is triggered. ⏰⏰⏰"
-yarn format
-yarn format
-git add -A .
-echo "Pre commit is successfully completed. 🚀🚀🚀"
