@@ -4,9 +4,11 @@ import Router from './router/router';
 
 const App = () => {
     return (
-        <BrowserRouter>
-            <Router />
-        </BrowserRouter>
+        <div className="app">
+            <BrowserRouter>
+                <Router />
+            </BrowserRouter>
+        </div>
     );
 };
 

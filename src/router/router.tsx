@@ -1,8 +1,6 @@
 import { CircularProgress } from '@mui/material';
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import PageNotFound from '../pages/common/PageNotFound';
-
 import PrivateRouter, { PrivateRouteProps } from './PrivateRouter';
 import PublicRouter, { PublicRouteProps } from './PublicRouter';
 
@@ -10,6 +8,7 @@ import PublicRouter, { PublicRouteProps } from './PublicRouter';
 const Dashboard = lazy(() => import('../pages/private/Dashboard'));
 const SignIn = lazy(() => import('../pages/public/SignIn'));
 const SignUp = lazy(() => import('../pages/public/SignUp'));
+const PageNotFound = lazy(() => import('../pages/common/PageNotFound'));
 
 const Router = () => {
     return (
